@@ -1,4 +1,5 @@
 {
     "editor.formatOnPaste": true,
-    "refactor-css.include": "**/*.{htm,html,vue,hbs,handlebars,php,jade,twig,md,erb,ejs,nunjucks,haml,leaf,js}"
+    "refactor-css.include": "**/*.{htm,html,vue,hbs,handlebars,php,jade,twig,md,erb,ejs,nunjucks,haml,leaf,js}",
+    "editor.formatOnSave": true
 }

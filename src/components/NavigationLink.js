@@ -6,8 +6,8 @@ const LinkElement = (props) => {
     <li
       className={
         props.insideMenu
-          ? "text-4xl font-somar text-black font-bold h-14 flex justify-center items-center bg-orange-bright"
-          : "hidden h-full text-4xl font-bold text-black md:block font-somar p-full"
+          ? "text-4xl font-somar text-white font-bold h-14 flex justify-center items-center bg-opacity-40 bg-orange"
+          : "hidden h-full text-4xl font-bold text-white md:block font-somar p-full"
       }
     >
       <Link

@@ -19,4 +19,15 @@
     font-display: swap;
 }
 
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
+  color: #e98f0f;
+}
+
+.swiper-container .swiper-pagination-bullet {
+    background: #e98f0f;
+    width: 16px;
+    height: 16px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap');
+
