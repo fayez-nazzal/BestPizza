@@ -20,18 +20,26 @@ module.exports = {
       yellow: "#fdd34d",
     },
     extend: {
-      height: (theme) => ({
+      height: {
         18: "4.5rem",
         140: "35rem",
-      }),
-      width: (theme) => ({
+      },
+      width: {
         18: "4.5rem",
         110: "27.5rem",
-      }),
-      top: (theme) => ({
+        115: "28.75rem",
+        140: "35rem",
+        bscreen: "94vw",
+      },
+      top: {
         18: "4.5rem",
         140: "35rem",
-      }),
+      },
+      margin: {
+        "-18": "-4.5rem",
+        100: "20rem",
+        50: "10rem",
+      },
     },
   },
   variants: {

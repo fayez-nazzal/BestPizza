@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import { StaticImage } from "gatsby-plugin-image";
 import NavigationLink from "./NavigationLink";
+import { getScrollPercent } from "../helpers/helpers";
 
 const Navbar = (props) => {
+  const [scrollParcent, setScrollParcent] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrollParcent(parseInt(getScrollPercent()));
+    };
+
+    document.addEventListener("scroll", onScroll);
+
+    return () => {
+      document.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <div className="sticky top-0 z-50 h-18">
-      <nav className="absolute top-0 left-0 right-0 bg-opacity-50 border-b select-none h-18 bg-orange ">
+      <nav
+        className="absolute top-0 left-0 right-0 border-b border-white select-none h-18 bg-orange"
+        style={{
+          backgroundColor: `rgba(233, 143, 15, ${(scrollParcent + 25) / 75})`,
+        }}
+      >
         <ul className="flex items-center h-18">
           <button className="focus:outline-none" onClick={props.toggleMenu}>
             <FaBars

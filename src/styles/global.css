@@ -4,30 +4,35 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Somar';
-    src: url('Somar-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Somar";
+  src: url("Somar-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Somar';
-    src: url('Somar-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Somar";
+  src: url("Somar-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next {
   color: #e98f0f;
 }
 
 .swiper-container .swiper-pagination-bullet {
-    background: #e98f0f;
-    width: 16px;
-    height: 16px;
+  background: #e98f0f;
+  width: 16px;
+  height: 16px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap');
+.about-us {
+  background-color: #e98f0f90;
+  background-image: linear-gradient(315deg, #cc3e3a90 0%, #e98f0f90 74%);
+}
 
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
