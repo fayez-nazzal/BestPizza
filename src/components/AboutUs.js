@@ -17,7 +17,7 @@ const AboutUs = () => {
   return (
     <section className="flex flex-col justify-center px-16 py-16 about-us">
       <SectionHeader text="عن خدماتنا" />
-      <InfoFlex align="self-center xl:self-start">
+      <CustomInfoFlex align="self-center xl:self-start">
         <ColFlex>
           <InfoHeader>محضرة من قبل عباقرة البيتزا!</InfoHeader>
           <InfoP>
@@ -31,8 +31,8 @@ const AboutUs = () => {
           src="..\images\professional.jpg"
           {...imageProps}
         />
-      </InfoFlex>
-      <InfoFlex align="self-center">
+      </CustomInfoFlex>
+      <CustomInfoFlex align="self-center">
         <ColFlex>
           <InfoHeader>صحتك بتهمنا!</InfoHeader>
           <InfoP>
@@ -46,8 +46,8 @@ const AboutUs = () => {
           src="..\images\sterilization.jpg"
           {...imageProps}
         />
-      </InfoFlex>
-      <InfoFlex align="self-center xl:self-end">
+      </CustomInfoFlex>
+      <CustomInfoFlex align="self-center xl:self-end">
         <ColFlex>
           <InfoHeader>توصيل صاروخي!</InfoHeader>
           <InfoP>
@@ -60,9 +60,17 @@ const AboutUs = () => {
           src="..\images\fastDelivery.jpg"
           {...imageProps}
         />
-      </InfoFlex>
+      </CustomInfoFlex>
     </section>
   );
 };
 
 export default AboutUs;
+
+const CustomInfoFlex = (props) => {
+  return (
+    <InfoFlex bg="red-dark" opacity="80" align={props.align}>
+      {props.children}
+    </InfoFlex>
+  );
+};

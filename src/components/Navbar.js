@@ -19,12 +19,18 @@ const Navbar = (props) => {
     };
   }, []);
 
+  const getOpacity = () => {
+    const val =
+      ((scrollParcent > 12 ? scrollParcent * 1.5 : scrollParcent) + 25) / 75;
+    return val > 1 ? 1 : val;
+  };
+
   return (
     <div className="sticky top-0 z-50 h-18">
       <nav
-        className="absolute top-0 left-0 right-0 border-b border-white select-none h-18 bg-orange"
+        className="absolute top-0 left-0 right-0 border-b border-white select-none h-18"
         style={{
-          backgroundColor: `rgba(233, 143, 15, ${(scrollParcent + 25) / 75})`,
+          backgroundColor: `rgba(233, 143, 15, ${getOpacity()})`,
         }}
       >
         <ul className="flex items-center h-18">

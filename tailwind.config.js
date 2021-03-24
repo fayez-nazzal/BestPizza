@@ -1,6 +1,7 @@
 module.exports = {
   purge: [`./src/**/*.{js, jsx, ts, tsx}`],
   darkMode: "media",
+  important: true,
   theme: {
     fontFamily: {
       somar: ["Somar", "serif"],
@@ -15,7 +16,7 @@ module.exports = {
       pink: `#a84064`,
       indian: `#c1b996`,
       black: `#000`,
-      white: `#fff`,
+      white: `#ffffff`,
       transparent: "#00000000",
       yellow: "#fdd34d",
     },

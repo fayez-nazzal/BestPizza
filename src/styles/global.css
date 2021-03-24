@@ -35,4 +35,9 @@
   background-image: linear-gradient(315deg, #cc3e3a90 0%, #e98f0f90 74%);
 }
 
+.pizzas {
+  background-color: #cc3e3a90;
+  background-image: linear-gradient(315deg, #ff080090 0%, #a83c3990 74%);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
