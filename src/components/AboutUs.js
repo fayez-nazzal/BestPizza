@@ -28,7 +28,7 @@ const AboutUs = () => {
         </ColFlex>
         <StaticImage
           alt="professional staff"
-          src="..\images\professional.jpg"
+          src="../images/professional.jpg"
           {...imageProps}
         />
       </CustomInfoFlex>
@@ -43,7 +43,7 @@ const AboutUs = () => {
         </ColFlex>
         <StaticImage
           alt="sterilization"
-          src="..\images\sterilization.jpg"
+          src="../images/sterilization.jpg"
           {...imageProps}
         />
       </CustomInfoFlex>
@@ -57,7 +57,7 @@ const AboutUs = () => {
         </ColFlex>
         <StaticImage
           alt="fast deliver"
-          src="..\images\fastDelivery.jpg"
+          src="../images/fastDelivery.jpg"
           {...imageProps}
         />
       </CustomInfoFlex>

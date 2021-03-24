@@ -7,9 +7,8 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const imageProps = {
   className: "m-4",
-  imgClassName: "object-scale-down",
   width: 303,
-  height: 300,
+  height: 306,
   placeholder: "blurred",
 };
 
@@ -22,7 +21,7 @@ const Pizzas = () => {
           <InfoHeader>بيتزا ايطالية</InfoHeader>
           <InfoP inCell>جبنة موزاريلا, طماطم, بصل</InfoP>
           <StaticImage
-            src="..\images\italianPizza.png"
+            src="../images/italianPizza.png"
             alt="cheese pizza"
             {...imageProps}
           />
@@ -31,7 +30,7 @@ const Pizzas = () => {
           <InfoHeader>بيتزا ببروني</InfoHeader>
           <InfoP inCell>جبنة موزاريلا, ببروني, طماطم</InfoP>
           <StaticImage
-            src="..\images\tastyPizza.png"
+            src="../images/tastyPizza.png"
             alt="cheese pizza"
             {...imageProps}
           />
@@ -40,7 +39,7 @@ const Pizzas = () => {
           <InfoHeader>بيتزا هاواي</InfoHeader>
           <InfoP inCell>جبنة موزاريلا, فلفل, زيتون, طماطم, بصل</InfoP>
           <StaticImage
-            src="..\images\hawaiiPizza.png"
+            src="../images/hawaiiPizza.png"
             alt="cheese pizza"
             {...imageProps}
           />
@@ -49,7 +48,7 @@ const Pizzas = () => {
           <InfoHeader>بيتزا البيت</InfoHeader>
           <InfoP>جبنة بلدية, طماطم, خس</InfoP>
           <StaticImage
-            src="..\images\assortedPizza.png"
+            src="../images/assortedPizza.png"
             alt="cheese pizza"
             {...imageProps}
           />
@@ -58,7 +57,7 @@ const Pizzas = () => {
           <InfoHeader>بيتزا الجبنة</InfoHeader>
           <InfoP inCell>جبنة موزاريلا, جبنة قطع</InfoP>
           <StaticImage
-            src="..\images\chesePizza.png"
+            src="../images/chesePizza.png"
             alt="cheese pizza"
             {...imageProps}
           />
@@ -67,7 +66,7 @@ const Pizzas = () => {
           <InfoHeader>بيتزا نباتية</InfoHeader>
           <InfoP inCell>جبنة توفو, فلفل, زيتون, مشروم</InfoP>
           <StaticImage
-            src="..\images\veganPizza.png"
+            src="../images/veganPizza.png"
             alt="cheese pizza"
             {...imageProps}
           />
