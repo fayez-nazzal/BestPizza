@@ -5,7 +5,8 @@ import SectionHeader from "./SectionHeader";
 
 const OurLocation = () => {
   return (
-    <section className="w-screen py-8 h-max our-location">
+    <section className="flex flex-col justify-center px-16 py-16 our-location">
+      {" "}
       <SectionHeader text="موقعنا" />
       <p className="m-8 text-xl text-center text-white md:text-2xl md:h-14">
         جنين - قباطية, الحارة الغربية - بجانب معصرة الفايز
