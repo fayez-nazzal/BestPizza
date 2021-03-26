@@ -3,6 +3,7 @@ import AboutUs from "../components/AboutUs";
 import Layout from "../components/Layout";
 import PizzaSlideImages from "../components/PizzaSlideImages";
 import Pizzas from "../components/Pizzas";
+import OurLocation from "../components/OurLocation";
 
 const index = () => {
   return (
@@ -10,6 +11,7 @@ const index = () => {
       <PizzaSlideImages />
       <AboutUs />
       <Pizzas />
+      <OurLocation />
     </Layout>
   );
 };

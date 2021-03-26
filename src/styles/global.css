@@ -40,4 +40,9 @@
   background-image: linear-gradient(315deg, #ff080090 0%, #a83c3990 74%);
 }
 
+.our-location {
+  background-color: #cc3e3a90;
+  background: linear-gradient(70deg, #ff080090 0%, #e98f0f90 100%);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");

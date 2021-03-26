@@ -1,36 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import { StaticImage } from "gatsby-plugin-image";
 import NavigationLink from "./NavigationLink";
-import { getScrollPercent } from "../helpers/helpers";
 
 const Navbar = (props) => {
-  const [scrollParcent, setScrollParcent] = useState(0);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrollParcent(parseInt(getScrollPercent()));
-    };
-
-    document.addEventListener("scroll", onScroll);
-
-    return () => {
-      document.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
-  const getOpacity = () => {
-    const val =
-      ((scrollParcent > 12 ? scrollParcent * 1.5 : scrollParcent) + 25) / 75;
-    return val > 1 ? 1 : val;
-  };
-
   return (
     <div className="sticky top-0 z-50 h-18">
       <nav
         className="absolute top-0 left-0 right-0 border-b border-white border-opacity-50 select-none h-18"
         style={{
-          backgroundColor: `rgba(233, 143, 15, ${getOpacity()})`,
+          backgroundColor: `rgba(233, 143, 15, ${props.opacity})`,
         }}
       >
         <ul className="flex items-center h-18">
@@ -44,7 +23,7 @@ const Navbar = (props) => {
           </button>
           <NavigationLink>عن خدماتنا</NavigationLink>
           <NavigationLink>البيتزا</NavigationLink>
-          <NavigationLink>العروض</NavigationLink>
+          <NavigationLink>موقعنا</NavigationLink>
           <NavigationLink>من نحن</NavigationLink>
           <StaticImage
             className="mr-auto ml-1.5"

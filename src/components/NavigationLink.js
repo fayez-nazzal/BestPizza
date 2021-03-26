@@ -6,7 +6,7 @@ const LinkElement = (props) => {
     <li
       className={
         props.insideMenu
-          ? "text-4xl font-somar text-white font-bold h-14 flex justify-center items-center bg-opacity-40 bg-orange"
+          ? `text-4xl font-somar text-white font-bold h-14 flex justify-center items-center`
           : "hidden h-full text-4xl font-bold text-white md:block font-somar p-full"
       }
     >
@@ -14,6 +14,9 @@ const LinkElement = (props) => {
         className={`flex justify-center items-center h-full ${
           props.insideMenu && "w-full"
         } px-3  transition-all duration-200 cursor-pointer hover:bg-red-dark`}
+        style={{
+          backgroundColor: `rgb(233,143,15,${props.opacity}`,
+        }}
         to="services"
         smooth
       >
