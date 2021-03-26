@@ -45,7 +45,7 @@ const PizzaSlideImages = () => {
               className="w-screen h-96 md:h-140"
               alt="peproni pizza"
               src="../images/peproni.jpg"
-              loading="lazy"
+              loading="eager"
               placeholder="blurred"
             />
             <SlideText title="بيتزا وعكيفك">
@@ -58,7 +58,7 @@ const PizzaSlideImages = () => {
               className="w-screen h-96 md:h-140"
               alt="professional chef"
               src="../images/profChef.jpg"
-              loading="lazy"
+              loading="eager"
               placeholder="blurred"
             />
             <SlideText title="محضرة من قبل محترفين">
