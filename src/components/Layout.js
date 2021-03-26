@@ -43,7 +43,7 @@ const Layout = (props) => {
         toggleMenu={toggleMenu}
         opacity={getOpacity()}
       />
-      <NavMenu open={menuOpen} opacity={getOpacity()} />
+      <NavMenu open={menuOpen} opacity={getOpacity()} toggle={toggleMenu} />
       <main>{props.children}</main>
     </div>
   );

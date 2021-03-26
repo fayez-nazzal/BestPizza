@@ -21,10 +21,9 @@ const Navbar = (props) => {
               size={32}
             />
           </button>
-          <NavigationLink>عن خدماتنا</NavigationLink>
-          <NavigationLink>البيتزا</NavigationLink>
-          <NavigationLink>موقعنا</NavigationLink>
-          <NavigationLink>من نحن</NavigationLink>
+          <NavigationLink to="about-us">عن خدماتنا</NavigationLink>
+          <NavigationLink to="pizzas">البيتزا</NavigationLink>
+          <NavigationLink to="location">موقعنا</NavigationLink>
           <StaticImage
             className="mr-auto ml-1.5"
             height={54}

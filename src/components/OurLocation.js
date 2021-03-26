@@ -5,7 +5,10 @@ import SectionHeader from "./SectionHeader";
 
 const OurLocation = () => {
   return (
-    <section className="flex flex-col justify-center px-8 py-16 md:px-16 our-location">
+    <section
+      id="location"
+      className="flex flex-col justify-center px-8 py-16 md:px-16 our-location"
+    >
       {" "}
       <SectionHeader text="موقعنا" />
       <p className="m-8 text-xl text-center text-white md:text-2xl md:h-14">

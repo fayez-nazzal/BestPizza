@@ -9,17 +9,29 @@ const NavMenu = (props) => {
       } `}
     >
       <ul className="divide-y-2 divide-tussock divide-opacity-80 ">
-        <NavigationLink opacity={props.opacity} insideMenu>
+        <NavigationLink
+          opacity={props.opacity}
+          toggleMenu={props.toggle}
+          to="about-us"
+          insideMenu
+        >
           عن خدماتنا
         </NavigationLink>
-        <NavigationLink opacity={props.opacity} insideMenu>
+        <NavigationLink
+          opacity={props.opacity}
+          toggleMenu={props.toggle}
+          to="pizzas"
+          insideMenu
+        >
           البيتزا
         </NavigationLink>
-        <NavigationLink opacity={props.opacity} insideMenu>
+        <NavigationLink
+          opacity={props.opacity}
+          toggleMenu={props.toggle}
+          to="location"
+          insideMenu
+        >
           موقعنا
-        </NavigationLink>
-        <NavigationLink opacity={props.opacity} insideMenu>
-          من نحن
         </NavigationLink>
       </ul>
     </aside>

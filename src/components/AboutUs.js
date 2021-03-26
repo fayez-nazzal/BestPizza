@@ -15,7 +15,10 @@ const imageProps = {
 
 const AboutUs = () => {
   return (
-    <section className="flex flex-col justify-center px-16 py-16 about-us">
+    <section
+      id="about-us"
+      className="flex flex-col justify-center px-16 py-16 about-us"
+    >
       <SectionHeader text="عن خدماتنا" />
       <CustomInfoFlex align="self-center xl:self-start">
         <ColFlex>

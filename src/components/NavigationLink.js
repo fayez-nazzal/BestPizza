@@ -17,7 +17,8 @@ const LinkElement = (props) => {
         style={{
           backgroundColor: `rgb(233,143,15,${props.opacity}`,
         }}
-        to="services"
+        to={props.to}
+        onClick={() => props.insideMenu && props.toggleMenu()}
         smooth
       >
         {props.children}

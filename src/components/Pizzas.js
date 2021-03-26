@@ -14,7 +14,7 @@ const imageProps = {
 
 const Pizzas = () => {
   return (
-    <section className="px-4 py-8 md:px-16 pizzas">
+    <section id="pizzas" className="px-4 py-8 md:px-16 pizzas">
       <SectionHeader text="البيتزا" />
       <div className="grid items-center justify-center grid-cols-1 gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3 grid-rows-auto">
         <PizzaFlex>
