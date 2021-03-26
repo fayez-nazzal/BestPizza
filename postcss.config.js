@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [require("tailwindcss11111")],
+  plugins: [require("tailwindcss")],
 };
