@@ -1,6 +1,6 @@
 import React from "react";
-import GoogleMapReact from "google-map-react";
-import LocationPin from "./LocationPin";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import LeafletMap from "./LeafletMap";
 import SectionHeader from "./SectionHeader";
 
 const OurLocation = () => {
@@ -15,17 +15,7 @@ const OurLocation = () => {
         جنين - قباطية, الحارة الغربية - بجانب معصرة الفايز
       </p>
       <div className="w-full h-110">
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBTlt13Djn5NXeyMWn_9Su-Aj4ynUxeupA" }}
-          defaultCenter={{
-            lat: 32.408329,
-            lng: 35.274535,
-          }}
-          defaultZoom={17}
-          yesIWantToUseGoogleMapApiInternals
-        >
-          <LocationPin lat={32.408329} lng={35.274535} />
-        </GoogleMapReact>
+        <LeafletMap />
       </div>
     </section>
   );

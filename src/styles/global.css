@@ -45,4 +45,8 @@
   background: linear-gradient(70deg, #ff080090 0%, #e98f0f90 100%);
 }
 
+.leaflet-container {
+  height: 100%;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
